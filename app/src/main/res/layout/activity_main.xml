@@ -8,11 +8,8 @@
 
     <TextView
         android:id="@+id/tvHeight"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
+        style="@style/tvStyle"
         android:text="Your Height:"
-        android:textAlignment="center"
-        android:gravity="bottom"
         />
     <EditText
         android:id="@+id/etHeight"
@@ -32,12 +29,9 @@
         <!--/>-->
     <TextView
         android:id="@+id/tvWeight"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
+        style="@style/tvStyle"
         android:text="Your Weight:"
         android:layout_below="@+id/tvHeight"
-        android:textAlignment="center"
-        android:gravity="bottom"
         />
     <EditText
         android:id="@+id/etWeight"

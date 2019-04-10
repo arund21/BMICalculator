@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btnCalc = findViewById(R.id.btnCalc);
         tvBMI = findViewById(R.id.tvBMI);
 
-        tvBMI.setOnClickListener(new View.OnClickListener() {
+        btnCalc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (TextUtils.isEmpty(etHeight.getText().toString())) {
