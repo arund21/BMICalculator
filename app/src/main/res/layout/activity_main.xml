@@ -18,15 +18,8 @@
         android:layout_toRightOf="@+id/tvHeight"
         android:hint="(centimeters)"
         android:gravity="center"
+        android:inputType="number"
         />
-    <!--<TextView-->
-        <!--android:id="@+id/tvCm"-->
-        <!--android:layout_width="150dp"-->
-        <!--android:layout_height="40dp"-->
-        <!--android:layout_below="@+id/etHeight"-->
-        <!--android:layout_toRightOf="@+id/tvWeight"-->
-        <!--android:text="(centimeters)"-->
-        <!--/>-->
     <TextView
         android:id="@+id/tvWeight"
         style="@style/tvStyle"
@@ -41,15 +34,8 @@
         android:layout_toRightOf="@+id/tvHeight"
         android:hint="(kilograms)"
         android:gravity="center"
+        android:inputType="number"
         />
-    <!--<TextView-->
-        <!--android:id="@+id/tvKg"-->
-        <!--android:layout_width="150dp"-->
-        <!--android:layout_height="40dp"-->
-        <!--android:layout_below="@+id/etWeight"-->
-        <!--android:layout_toRightOf="@+id/tvWeight"-->
-        <!--android:text="(kilograms)"-->
-        <!--/>-->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,6 +52,7 @@
         android:layout_centerInParent="true"
         />
     <EditText
+        android:id="@+id/etBMI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="0"

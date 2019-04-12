@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText etHeight, etWeight;
+    EditText etHeight, etWeight,etBMI;
     Button btnCalc;
-    TextView tvBMI;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         etHeight = findViewById(R.id.etHeight);
         etWeight = findViewById(R.id.etWeight);
         btnCalc = findViewById(R.id.btnCalc);
-        tvBMI = findViewById(R.id.tvBMI);
+        etBMI = findViewById(R.id.etBMI);
 
         btnCalc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 etWeight2 = Double.parseDouble(etWeight.getText().toString());
                 Arun_BMI Result = new Arun_BMI(etHeight1, etWeight2);
                 double myBMI = Result.calcBMI();
-                tvBMI.setText(Double.toString(myBMI));
+                etBMI.setText(Double.toString(myBMI));
             }
         });
     }
